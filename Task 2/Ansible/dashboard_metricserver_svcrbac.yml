@@ -1,0 +1,3 @@
+---
+- import_playbook: playbookfiles/dashboard.yml
+- import_playbook: playbookfiles/svcwithrbac.yml

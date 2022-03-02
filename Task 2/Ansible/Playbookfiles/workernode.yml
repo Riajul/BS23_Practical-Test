@@ -1,0 +1,14 @@
+---
+- hosts: kube-worker-nodes
+  vars_files:
+  - env_variables
+  tasks:
+  - name: Copying token to worker nodes
+    copy: src={{ token_file }} dest=adm_join
+
+  - name: Joining worker nodes with kubernetes master
+    shell: |
+     kubeadm reset
+     cat join_token | tail -2 > admjoin.sh
+     chmod a+x admjoin.sh
+     sh admjoin.sh
