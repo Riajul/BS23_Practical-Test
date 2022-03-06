@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1
+  labels:
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app1
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: app1
+        tier: backend
+    spec:
+      containers:
+      - name: app1
+        image: riajulmoon/riajulbs:latest
+        ports:
+        - containerPort: 5000
+        lifecycle:
+          postStart:
+            exec:
+              command: ["/bin/sh"]
+      nodeSelector:
+        app1-deploy: "true"
