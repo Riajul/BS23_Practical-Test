@@ -1,4 +1,4 @@
-# Task Contents & Description 
+# Task Description 
 **Task1:**
 >App1 & App2:
 - Dockerfile for image creation
@@ -12,16 +12,16 @@
 **Task2:**
 >Vagrant:
 - Readme file and all vagrant file is provided.
-- 1 Master node and Two Worker Node.
+- 1 Master node and 2 Worker Node.
 - Follow the README and install VM
 >Ansible:
 - Kube Master and 2 Worker Node with flannel
 - Kube DashBoard
-- Service Account With Rbac
+- Service Account With RBAC
 
 **Task3:**
-- Proposed a Hybrid Structure (With Azure Env + On Premise Env)
-- Test Automation
+- Proposed a Hybrid Structure
 - IAC With Terraform
-- Pipeline in Azure DevOps / Jenkins
-- Zabbix For Server Monitoring
+- Pipeline in Azure DevOps
+- Test Automation
+- Monitoring
