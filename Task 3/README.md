@@ -31,8 +31,8 @@
 - Selenium/Robot Framework test automation script for Sanity test.
 - Install a zabbix server and install zabbix agent for server and service monitoring.
 - Create discovery rules zabbix.
-- Install ELK stack for log management and filebeat
-- Create index pattern in ELK
+- Install ELK stack for log management and filebeat.
+- Create index pattern in ELK.
 
 **Access Services:**
 - We will use FrontEnd IP in Azure Application Gateway and User will use this IP to access the Application/Services.
