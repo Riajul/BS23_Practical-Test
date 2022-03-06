@@ -1,8 +1,8 @@
 # App 1 Image Build and Deploy in Cluster with YAML
 
 ** Image Build and Push to Repo
->docker build -t mizapp1 .
->docker tag mizapp1:latest dockerhubrepo:tag
+>docker build -t riajulapp1 .
+>docker tag riajulapp1:latest dockerhubrepo:tag
 >docker push dockerhubrepo:tag
 
 Make sure Dockerfile and app src file is in same folder.
